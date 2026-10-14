@@ -438,7 +438,7 @@ function renderSpirits(filter){
     if(f&&!(p.n.toLowerCase().includes(f)||(p.d+p.o+p.v).toLowerCase().includes(f)))return;
     h+='<div class="spirit"><div class="nm">'+p.n+'</div><div class="of">'+p.v+' '+p.d+'<br><b>Operations:</b> '+p.o+' <span class="src-tag">Mathers, Bk 2</span></div></div>';
   });
-  h+='<div class="rank-h">The 316 Servient Spirits</div><p class="cite" style="text-align:center">Book 2, Ch. 19. The text assigns no office to any individual servitor \u2014 only Mathers\u2019 linguistic notes on the names, given here as printed.</p>';
+  h+='<div class="rank-h">The Servient Spirits \u2014 416 names as printed</div><p class="cite" style="text-align:center">Book 2, Ch. 19. The text assigns no office to any individual servitor \u2014 only Mathers\u2019 linguistic notes on the names, given here as printed. Note: the book\u2019s own summary table states 316, but the chapters enumerate 416 names; both figures are given as printed, without reconciliation.</p>';
   GROUPS.forEach(g=>{
     const items=g.s.filter(s=>!f||s.toLowerCase().includes(f));
     if(!items.length)return;
