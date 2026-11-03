@@ -1,5 +1,5 @@
-// Abramelin Operation Companion — service worker (offline shell cache)
-var CACHE = 'abramelin-v1';
+// Abramelin Operation Companion, service worker (offline shell cache)
+var CACHE = 'abramelin-v2';
 var CORE = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(CORE); }).then(function () { return self.skipWaiting(); }));
